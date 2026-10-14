@@ -115,7 +115,7 @@ CFLAGS         = -O3 $(DFLAGS) $(IFLAGS) $(CUDA_CFLAGS)
 F90FLAGS       = $(FFLAGS) -nomodule -fpp -allow nofpp_comments $(FDFLAGS) $(CUDA_F90FLAGS) $(IFLAGS) $(MODFLAGS)
 
 # compiler flags with and without optimization for fortran-77
-# the latter is NEEDED to properly compile dlamch.fFFLAGS         = -O3 -xHost -qopenmp -assume byterecl
+# the latter is NEEDED to properly compile dlamch.f
 FFLAGS         = -O3 -xHost -qopenmp -assume byterecl
 FFLAGS_NOOPT   = -O0 -assume byterecl -g -traceback
 # compiler flag needed by some compilers when the main program is not fortran

@@ -1,0 +1,19 @@
+=== oneAPI environment ===
+ONEAPI_ROOT=/opt/intel/oneapi
+MKLROOT=/opt/intel/oneapi/mkl/2026.1
+
+=== Intel MPI version ===
+Intel(R) MPI Library for Linux* OS, Version 2021.18.1 Build 20260626 (id: b44796a)
+Copyright 2003-2026, Intel Corporation.
+
+=== Intel MKL version ===
+#define __INTEL_MKL__          2026
+#define INTEL_MKL_VERSION      20260100
+
+=== Library settings from make.inc ===
+LD_LIBS        =
+BLAS_LIBS      =   -lmkl_intel_lp64  -lmkl_sequential -lmkl_core
+LAPACK_LIBS =
+SCALAPACK_LIBS = -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64
+FFT_LIBS       =
+MPI_LIBS       =
